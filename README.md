@@ -44,5 +44,11 @@ Notes:
 
 - code as-is is in semi-verbose mode, expect some print statements in stdout.
 
+- there is some 'sleep' behavior in the code, as to act less bot-like.
+
+Things to be done:
+
+- need exception handling when retrieving generated files
+
 
 This code needs a better UI for the output, however it can be extended to websites other than LinkedIn.
