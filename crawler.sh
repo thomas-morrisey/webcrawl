@@ -1,3 +1,5 @@
+python crawler_00_dirs.py;
+
 python crawler_0_ui.py;
 
 python crawler_1_create_list.py;
