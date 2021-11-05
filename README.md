@@ -26,7 +26,9 @@ c. Next, the dogpile list of links is searched via the selenium browser. Current
 
 Notes:
 
-This was built on a mac.  For seamless operation create a default user on Firefox.  For macOS to create the default profile use the command 
+This was built on a mac.  
+
+For seamless operation create a default profile to use on selenium's version of Firefox.  For macOS to create this default profile use the command: 
   
 /Applications/Firefox.app/Contents/MacOS/firefox-bin -P
 
