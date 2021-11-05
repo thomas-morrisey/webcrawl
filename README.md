@@ -26,11 +26,13 @@ c. Next, the dogpile list of links is searched via the selenium browser. Current
 
 Notes:
 
-This was built on a mac.  
+- This was built on a mac.  
 
-For seamless operation create a default profile to use on selenium's version of Firefox.  For macOS to create this default profile use the command: 
+- For seamless operation create a default profile to use on selenium's version of Firefox.  For macOS to create this default profile use the command: 
   
-/Applications/Firefox.app/Contents/MacOS/firefox-bin -P
+      /Applications/Firefox.app/Contents/MacOS/firefox-bin -P
+      
+- the module ridgebeam is only used for its hashing function, can be commented out, and have its hashing function replaced with another.
 
 
 This code can be extended to other websites.
