@@ -37,4 +37,4 @@ Notes:
 - some stuff is hard coded and needs to be placed into a config file or input box, e.g. the number of pages to search on dogpile, the LinkedIn search string,... 
 
 
-This code can be extended to other websites.
+This code needs a better UI for the output, however it can be extended to websites other than LinkedIn.
