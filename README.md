@@ -34,6 +34,10 @@ Notes:
   
       /Applications/Firefox.app/Contents/MacOS/firefox-bin -P
       
+- After cloning run the commands
+   - chmod +x *.sh
+   - chmod +x *.py
+      
 - the module ridgebeam is only used for its hashing function, can be commented out, and have its hashing function replaced with another.
 
 - some stuff is hard coded and needs to be placed into a config file or input box, e.g. the number of pages to search on dogpile, the LinkedIn search string,... 
