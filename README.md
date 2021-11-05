@@ -1,2 +1,26 @@
 # webcrawl
-A LinkedIn web crawler that consolidates entities via n-grams.
+
+A LinkedIn webcrawler is presented that characterizes entities via n-grams. 
+
+
+a. The crawl is initiated by search terms entered through easygui.
+
+
+b. These search terms are sent to the dogpile search engine, which currently prepends them with "linkedin+people+".  A list of links is returned.  This code is set to de-automation when the dogpile Capthca appears, whereby a human takes over, with the amount of time to solve currently hard coded to 4 minutes. All this happens on a selenium Firefox browser. 
+
+
+c. Next, the dogpile list of links is searched via the selenium browser. Currently we fiddle to determine the correct area to crop for each webpage on the list.
+
+  0. A protocol is set up to disambiguate the list of links when creating supporting temp files.
+  
+  1. Each web page on the list of links is scrolled through, with the page height being re-calculated on each scroll as determined by the Document Object Model.
+  
+  2. On each link we take screen shots as we scroll. Currently opts.headless = False and the browser is visible during this portion.
+  
+  3. As an added check, an end is reached when the hashes of the screen shots are equal. Any hash will work, we use ridgebeam's hash. The DOM is finicky.
+  
+  4. For each entity, parse through the mutually exlusive screen shots retrieving n-grams, pytesseract. 1-grams are characterized, nltk.word_tokenize.
+
+
+
+This code can be extended.
