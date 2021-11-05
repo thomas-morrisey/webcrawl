@@ -24,5 +24,11 @@ c. Next, the dogpile list of links is searched via the selenium browser. Current
   4. For each entity, parse through the mutually exlusive screen shots retrieving n-grams, pytesseract. 1-grams are characterized, nltk.word_tokenize.
 
 
+Notes:
 
-This code can be extended.
+This was built on a mac.  For seamless operation create a default user on Firefox.  For macOS to create the default profile use the command 
+  
+/Applications/Firefox.app/Contents/MacOS/firefox-bin -P
+
+
+This code can be extended to other websites.
