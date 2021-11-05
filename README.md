@@ -1,5 +1,7 @@
 # webcrawl
 
+For those who like to bypass specific APIs.
+
 crawler.sh
 
 A LinkedIn webcrawler is presented that characterizes entities via n-grams. 
