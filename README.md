@@ -1,5 +1,7 @@
 # webcrawl
 
+crawler.sh
+
 A LinkedIn webcrawler is presented that characterizes entities via n-grams. 
 
 
