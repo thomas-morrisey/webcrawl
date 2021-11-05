@@ -34,5 +34,7 @@ Notes:
       
 - the module ridgebeam is only used for its hashing function, can be commented out, and have its hashing function replaced with another.
 
+- some stuff is hard coded and needs to be placed into a config file or input box, e.g. the number of pages to search on dogpile, the LinkedIn search string,... 
+
 
 This code can be extended to other websites.
