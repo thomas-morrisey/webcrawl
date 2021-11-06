@@ -7,7 +7,7 @@ For those who like to bypass specific APIs.
 A **LinkedIn** webcrawler that characterizes entities via n-grams. 
 
 
-a. The crawler is initiated by search terms entered through a dialog box, easygui.
+a. The crawler is initiated by search terms entered through a dialog box.
 
 
 b. These search terms are sent to the **dogpile** search engine, which currently prepends them with "linkedin+people+".  A list of links is returned.  This code is set to de-automation when the **dogpile Capthca** appears, at which point a human takes over. 4 minutes is the hard-coded amount of time the code gives to solve the **Captcha**. This happens on a selenium Firefox browser. 
