@@ -10,10 +10,10 @@ A **LinkedIn** webcrawler that characterizes entities via n-grams.
 a. The crawler is initiated by search terms entered through a dialog box.
 
 
-b. These search terms are sent to the **dogpile** search engine, which currently prepends them with "linkedin+people+".  A list of links is returned.  This code is set to de-automation when the **dogpile Capthca** appears, at which point a human takes over. 4 minutes is the hard-coded amount of time the code gives to solve the **Captcha**. This happens on a selenium Firefox browser. 
+b. These search terms are sent to the **dogpile** search engine, which currently prepends them with "linkedin+people+".  A list of links is returned.  This code is set to *de-automation* when the **dogpile Capthca** appears, at which point a human takes over. 4 minutes is the hard-coded amount of time the code gives to solve the **Captcha**. This happens on a selenium Firefox browser. 
 
 
-c. Next, the returned **dogpile** list of links has each link visited, scrolled through, and imaged via the selenium browser. Currently we fiddle to determine an area to crop for each webpage on the list, to eliminate noise.
+c. Next, the returned **dogpile** list of links has each link visited, scrolled through, with screen shots taken. Currently we fiddle to determine an area to crop for each webpage on the list, to eliminate noise.
 
   0. A protocol is set up to disambiguate the list of links when creating supporting temp files.
   
@@ -42,7 +42,7 @@ Notes:
 
 - some stuff is hard coded and needs to be placed into a config file or input box, e.g. the number of pages to search on **dogpile**, the **LinkedIn** search string,...
 
-- code as-is is in semi-verbose mode, expect some print statements in stdout.
+- *code as-is is in semi-verbose mode, expect some print statements in stdout*.
 
 - there is some 'sleep' behavior in the code, as to act less bot-like.
 
