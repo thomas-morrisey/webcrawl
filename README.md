@@ -7,13 +7,13 @@ crawler.sh
 A LinkedIn webcrawler that characterizes entities via n-grams. 
 
 
-a. The crawl is initiated by search terms entered through easygui.
+a. The crawl is initiated by search terms entered through a dialog box, easygui.
 
 
-b. These search terms are sent to the dogpile search engine, which currently prepends them with "linkedin+people+".  A list of links is returned.  This code is set to de-automation when the dogpile Capthca appears, whereby a human takes over, with the amount of time to solve currently hard coded to 4 minutes. All this happens on a selenium Firefox browser. 
+b. These search terms are sent to the dogpile search engine, which currently prepends them with "linkedin+people+".  A list of links is returned.  This code is set to de-automation when the dogpile Capthca appears, at which point a human takes over. 4 minutes is the hard-coded amount of time the code gives to solve the Captcha. This happens on a selenium Firefox browser. 
 
 
-c. Next, the dogpile list of links is searched via the selenium browser. Currently we fiddle to determine the correct area to crop for each webpage on the list.
+c. Next, the returned dogpile list of links has each link visited, scrolled through, and imaged via the selenium browser. Currently we fiddle to determine an area to crop for each webpage on the list, to eliminate noise.
 
   0. A protocol is set up to disambiguate the list of links when creating supporting temp files.
   
@@ -21,7 +21,7 @@ c. Next, the dogpile list of links is searched via the selenium browser. Current
   
   2. On each link we take screen shots as we scroll. Currently opts.headless = False and the browser is visible during this portion.
   
-  3. As an added check, an end is reached when the hashes of the screen shots are equal. Any hash will work, we use ridgebeam's hash. The DOM is finicky.
+  3. As an added check, an end is reached when the hashes of the screen shots are equal. The DOM is finicky. Any hash will work, we use ridgebeam's hash.
   
   4. For each entity, parse through the mutually exlusive screen shots retrieving n-grams, pytesseract. 1-grams are characterized, nltk.word_tokenize.
 
@@ -30,11 +30,11 @@ Notes:
 
 - This was built on a mac.  
 
-- For seamless operation create a default profile to use on selenium's version of Firefox.  For macOS to create this default profile use the command: 
+- For seamless operation create a default profile to use on selenium's version of Firefox, and sign into whichever website is to be browsed with that profile.  For macOS to create this default profile use the command: 
   
       /Applications/Firefox.app/Contents/MacOS/firefox-bin -P
       
-- After cloning run the commands
+- After cloning the repository, run the commands
    - chmod +x *.sh
    - chmod +x *.py
       
@@ -48,7 +48,8 @@ Notes:
 
 Things to be done:
 
-- need exception handling when retrieving generated files
+- need more exception handling
 
 
-This code needs a better UI for the output, however it can be extended to websites other than LinkedIn.
+This code needs a better UI for the output. 
+This code can be extended to websites other than LinkedIn.
