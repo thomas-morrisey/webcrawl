@@ -4,7 +4,7 @@ For those who like to bypass specific APIs.
 
 **./crawler.sh**
 
-A LinkedIn webcrawler that characterizes entities via n-grams. 
+A **LinkedIn** webcrawler that characterizes entities via n-grams. 
 
 
 a. The crawler is initiated by search terms entered through a dialog box, easygui.
@@ -40,7 +40,7 @@ Notes:
       
 - the module ridgebeam is only used for its hashing function, can be commented out, and have its hashing function replaced with another.
 
-- some stuff is hard coded and needs to be placed into a config file or input box, e.g. the number of pages to search on dogpile, the LinkedIn search string,...
+- some stuff is hard coded and needs to be placed into a config file or input box, e.g. the number of pages to search on **dogpile**, the **LinkedIn** search string,...
 
 - code as-is is in semi-verbose mode, expect some print statements in stdout.
 
@@ -52,4 +52,4 @@ Things to be done:
 
 
 This code needs a better UI for the output. 
-This code can be extended to websites other than LinkedIn.
+This code can be extended to websites other than **LinkedIn**.
