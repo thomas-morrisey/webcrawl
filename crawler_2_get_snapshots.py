@@ -112,10 +112,10 @@ def main():
             k = getK(browser)
             old_hash = ""
             i = 0
-            
+            time.sleep(4)
+
             while i < k :
             
-                time.sleep(4)
                 imgPath = fname + "_" + str(i) + ".png"
                 browser.get_screenshot_as_file(imgPath)
                 
@@ -134,6 +134,7 @@ def main():
                 
                 i += 1
                 k = getK(browser)
+                time.sleep(4)
 
             browser.close()
             
